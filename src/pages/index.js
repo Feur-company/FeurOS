@@ -1,12 +1,11 @@
 import Taskbar from "../../components/taskbar";
-import Desktop from "../../components/desktop";
+
 
 
 function Home(){
     return(
         <>
-        <Desktop/>
-        <Taskbar/>
+        <Taskbar><p></p></Taskbar>
         </>
     )
 }
