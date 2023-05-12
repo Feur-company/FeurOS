@@ -1,0 +1,13 @@
+.window{
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 50px;
+    background-color: aliceblue;
+    width: 30%;
+    height: 25%;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    color: brown;
+}

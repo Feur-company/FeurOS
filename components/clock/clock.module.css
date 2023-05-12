@@ -1,0 +1,15 @@
+.clock{
+    color: aliceblue;
+    position: absolute;
+    left: 90%;
+    top: 10%;
+    font-size: smaller;
+}
+
+.date{
+    color: aliceblue;
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    font-size: smaller;
+}
