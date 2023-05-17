@@ -6,11 +6,11 @@ function Home(){
     return(
         <>
         <Taskbar>
-            <AppIcon imgSrc="/images/quoi.jpeg"/>
-            <AppIcon imgSrc="/images/quoi.jpeg"/>
-            <AppIcon imgSrc="/images/quoi.jpeg"/>
-            <AppIcon imgSrc="/images/quoi.jpeg"/>
-            <AppIcon imgSrc="/images/quoi.jpeg"/>
+            <AppIcon imgSrc="/apps/quoi.jpeg"/>
+            <AppIcon imgSrc="/apps/quoi.jpeg"/>
+            <AppIcon imgSrc="/apps/quoi.jpeg"/>
+            <AppIcon imgSrc="/apps/quoi.jpeg"/>
+            <AppIcon imgSrc="/apps/quoi.jpeg"/>
         </Taskbar>
         </>
     )
