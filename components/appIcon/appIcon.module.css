@@ -1,0 +1,16 @@
+.appDiv{
+    opacity: 100%;
+    margin-left: 10px;
+    margin-right: 10px ;
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: #1d7fe7;
+    border-radius: 10px;
+
+    transition: transform 0.3s;
+}
+
+.appDiv:hover{
+    transform: scale(1.2);
+}
