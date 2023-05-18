@@ -1,7 +1,7 @@
 import Taskbar from "../../components/taskbar";
 import AppIcon from "../../components/appIcon";
 
-import quoi from "../../public/apps/quoi/infos.json"
+import quoi from "../../apps/quoi/infos.json"
 
 function Home(){
     return(
