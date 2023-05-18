@@ -1,13 +1,13 @@
 import Taskbar from "../../components/taskbar";
 import AppIcon from "../../components/appIcon";
 
-import quoi from "../../apps/quoi/infos.json"
+import {infos, run} from "../../apps/quoi";
 
 function Home(){
     return(
         <>
         <Taskbar>
-            <AppIcon appName={quoi.name} imgSrc={quoi.icon_path}/>
+            <AppIcon onClick={run} appName={infos.name} imgSrc={infos.icon_path}/>
         </Taskbar>
         </>
     )
