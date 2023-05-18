@@ -7,7 +7,7 @@ function Home(){
     return(
         <>
         <Taskbar>
-            <AppIcon imgSrc={quoi.app_icon_path}/>
+            <AppIcon appName={quoi.name} imgSrc={quoi.icon_path}/>
         </Taskbar>
         </>
     )
