@@ -4,6 +4,11 @@ export const infos = {
 
 };
 
-export function run(){
+export function window(){
     alert("Running")
+    return(
+        <div>
+            <h1>QUOI?????????????????</h1>
+        </div>
+    )
 }
