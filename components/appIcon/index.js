@@ -2,6 +2,10 @@ import styles from "./appIcon.module.css"
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+function handleClick(){
+    
+}
+
 export default function AppIcon(props){
     const [isLaunched, setIsLaunched] = useState(0)
 
@@ -10,7 +14,7 @@ export default function AppIcon(props){
     const window = props.Window
     return(
         <div className={styles.appDiv}>
-            <Image src={imagesPath} onClick={} className={styles.appImg} alt={app_name} width={40} height={40} />
+            <Image src={imagesPath} onClick={handleClick} className={styles.appImg} alt={app_name} width={40} height={40} />
         </div>
     )
 }
