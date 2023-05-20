@@ -1,6 +1,7 @@
 import styles from "./appIcon.module.css";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import ReactDOM from "react-dom";
 
 export default function AppIcon(props) {
   const [isLaunched, setIsLaunched] = useState(false);
@@ -13,15 +14,18 @@ export default function AppIcon(props) {
     setIsLaunched(true);
   }
 
-  function displayWindow(isLaunched) {
-    if (isLaunched) {
-      return (window());
-    }
-  }
-
   useEffect(() => {
     // Any side effects can be performed here when `isLaunched` changes
   }, [isLaunched]);
+
+  useEffect(() => {
+    // Clean up the state when the component unmounts
+    return () => {
+      setIsLaunched(false);
+    };
+  }, []);
+
+
 
   return (
     <>
@@ -35,7 +39,8 @@ export default function AppIcon(props) {
           height={40}
         />
       </div>
-      {displayWindow(isLaunched)} {/* Call the displayWindow function */}
+      {isLaunched &&
+        ReactDOM.createPortal(window(),  document.body)} {/* Render the window component outside of the current parent */}
     </>
   );
 }

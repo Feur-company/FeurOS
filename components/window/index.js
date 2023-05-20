@@ -1,13 +1,13 @@
 import styles from "./window.module.css"
 
-function Window(props){
-    content = props.children
-    tilte = props.title
+function Window({children}, props){
+
+    const tilte = props.title
 
     return(
         <>
         <div className={styles.window}>
-            {content}
+            {children}
         </div>
         </>
     );

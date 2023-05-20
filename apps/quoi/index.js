@@ -1,3 +1,5 @@
+import Window from "../../components/window";
+
 export const infos = {
     "name": "Quoi",
     "icon_path": "/appsIcon/quoi.jpeg"
@@ -6,8 +8,9 @@ export const infos = {
 
 export function window(){
     return(
-        <div>
+        <Window>
             <h1>QUOI?????????????????</h1>
-        </div>
+        </Window>
+        
     )
 }
