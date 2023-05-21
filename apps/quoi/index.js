@@ -1,4 +1,5 @@
 import Window from "../../components/window";
+import Image from "next/image";
 
 export const infos = {
     "name": "Quoi",
@@ -9,7 +10,12 @@ export const infos = {
 export function window(){
     return(
         <Window>
-            <h1>QUOI?????????????????</h1>
+            <Image
+                src="/appsImages/quoi/feur.gif"
+                width={200}
+                height={200}
+                alt="FEUR"
+            />
         </Window>
         
     )
